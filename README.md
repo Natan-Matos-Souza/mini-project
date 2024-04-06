@@ -7,7 +7,7 @@
 ```bash
 composer install
 ```
-**2. Up containers with sail**
+**2. Up containers with Sail**
 ```bash
 ./vendor/bin/sail up -d
 ```
