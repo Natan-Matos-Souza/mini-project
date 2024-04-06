@@ -35,9 +35,9 @@ class Post extends Model
         return $this->belongsTo(User::class, 'post_author', 'user_uuid');
     }
 
-    public function comments(): void
+    public function comments(): HasMany
     {
-        
+        return $this->hasMany(PostComment::class, 'belongs_to_post');
     }
 
 }
